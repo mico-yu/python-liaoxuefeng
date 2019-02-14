@@ -1,0 +1,14 @@
+基础：
+1、整数
+2、浮点数  1.23e9
+3、字符串 ‘’ 等同于“”， 转义字符\， r''表示字符串不转义， 多行内容'''...'''
+4、布尔值 True False and or not
+5、空值None 不等同0
+6、变量
+7、常量
+8、10/3=3.33； 10//3=3
+9、list：classmates = ['Michael', 'Bob', 'Tracy']
+	list.append() list.pop() list.insert(1,"jack")
+10、tuple：定义的时候就要赋值，赋值后不能改变。
+11、if elif else :
+12、
