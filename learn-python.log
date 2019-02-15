@@ -10,5 +10,28 @@
 9、list：classmates = ['Michael', 'Bob', 'Tracy']
 	list.append() list.pop() list.insert(1,"jack")
 10、tuple：定义的时候就要赋值，赋值后不能改变。
-11、if elif else :
-12、
+11、if elif else continue break
+12、dict: d={"Bob":90,"Jack":89,"Tom":77} d.get("Tom",-1) d.pop(“Bob”) 添加：d["jason"] = 88
+13、set：s = ([1,2,3])，set中不存在重复元素。s.add(4)
+总结：
+list：内容可变，有序，
+tuple：内容不可变
+dict：key不可变。
+set：不存在重复元素。
+网友总结：
+au1 = (1,2,3)        # 不可变元组
+au2 = (1,[2,3])      #“可变”元组
+d1 = {'a':au1}         #将不可变元组传入dict字典中的value
+d2 = {'b':au2}         #将“可变”元组传入dict字典中的value
+以上均未报错，说明dict字典中的value是可以传入不管是不可变元组还是“可变”元组
+d3 = {au1:1}    #将不可变元组作为dict的key
+未报错，说明作为dict的key,是可以传入不可变元组的
+d4 = {au2:2}    #将“可变”元组作为dict的key
+此处报错，说明作为dict的key是不可以传‘可变’元组的
+作为key,dict的key一定要保持不变 
+s1= set(au1)   # 将不可变元组传入set中
+未报错，说明可以将不可变元组传入set中
+s2= set(au2)  # 将“可变”元组传入set中
+直接报错，类型不能为List,说明不可以将“可变”元组传入set中
+
+
